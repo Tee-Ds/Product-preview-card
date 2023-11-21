@@ -1,0 +1,154 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 7px;
+    display: flex;
+    width: 45%;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.content {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.right-side {
+    padding: 5%;
+    padding-top: 3%;
+
+}
+
+img[alt="X"] {
+    display: none;
+}
+
+.bottle {
+    width: 50%;
+    border-radius: 7px 0 0 7px;
+    color: hsl(228, 12%, 48%);
+}
+
+h2,
+p>span {
+    font-family: 'Fraunces', serif;
+}
+
+.pef {
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+}
+
+h2 {
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+    line-height: 0.97;
+}
+
+.price {
+    font-size: 2.5rem;
+    color: hsl(158, 36%, 37%);
+    margin-right: 10px;
+}
+
+.cancel {
+    font-size: 0.8rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 7px;
+    /* font-family: Arial; */
+    color: #ffffff;
+    font-size: 13px;
+    background: hsl(158, 36%, 37%);
+    padding: 15px 70px 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn:hover {
+    background: hsl(158, 36%, 22%);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cart {
+    position: absolute;
+    left: 25%;
+    width: 5.5%;
+}
+
+.pricing {
+    margin: 25px 0;
+}
+
+@media (max-width:375px) {
+    body {
+        margin: 0;
+    }
+
+    .con {
+        height: 100dvh;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90dvw;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    img[alt="X"] {
+        display: initial;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .btn {
+        padding: 20px 70px 20px 70px;
+    }
+
+    .bottle {
+        display: none;
+    }
+
+    .content {
+        font-size: 15px;
+    }
+
+    .right-side {
+        padding: 5% 7%;
+    }
+
+
+}
